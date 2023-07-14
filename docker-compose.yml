@@ -52,7 +52,7 @@ services:
       - volnest:/nest/
       ports:
       - ${PORT}:${PORT}
-      # - ${SOCKET_PORT}:${SOCKET_PORT}
+      - ${SOCKET_PORT}:${SOCKET_PORT}
       networks:
       - transcendence
       depends_on:
